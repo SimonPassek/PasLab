@@ -1,0 +1,12 @@
+name: "presentations"
+output_dir: "docs"
+navbar:
+  title: "Presentations"
+  left:
+  - text: "Home"
+   href: index.html
+  - text: "Productivity_1"
+   href: Productivity_1.html
+output:
+  html_document:
+ theme: cosmo
