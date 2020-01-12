@@ -1,6 +1,10 @@
 ---
 title: PasLab
-output: html_document
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
 >Simon Passek is a medical student at the [Carl Gustav Carus University Hospital](https://www.uniklinikum-dresden.de/de) in Dresden, Germany. 
