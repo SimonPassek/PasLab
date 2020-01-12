@@ -1,0 +1,80 @@
+---
+title: reproducability and efficient workflow
+date: "`r Sys.Date()`"
+output: 
+  ioslides_presentation:
+    incremental: false
+    widescreen: true
+    smaller: false 
+---
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+library(shiny)
+library(tidyverse)
+
+```
+  
+## Why is open source a true alternative for many applications? /1 {.smaller .build}
+
+- software development companys like windows, apple and co.  produce usable, mostly  even good software
+- but:
+
+    - products are getting increasingly expansive and update dependent
+    - the (end) users loose their independence and individuality
+    - (end) users can only to a certain degree personalize and optimize the applications for their needs
+    - most of those products can lead to results, but they are not efficent nor powerful
+    --> users are more and more degraded to consumers, than rather beeing their own developers
+    
+## Why is open source a true alternative for many applications? /2    
+
+  > Why not use open source tools, with millions of active developers and support, that can be more powerful, efficent and elegant than commercial products?
+
+## Why does reproducability matter?
+![](https://www.youtube.com/watch?v=s3JldKoA0zw){width = "400", height = "250"}
+
+##directly embed code
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+library(tidyverse)
+head(diamonds)
+
+###<b>
+x <- 10
+y <- 20
+greetings <- c("Adam", "Emil")
+###</b>
+```
+
+
+## DevOps | modern (software) development practices
+  
+  - automate everything, that can be automated
+  
+  - after doing the exact same operation more than three times, write a function for it, automate it
+  
+# core toolbox
+
+## R
+
+##GUI of R: Rstudio
+```{r, out.width = "25%", fig.align="left"}
+knitr::include_graphics("img/RStudio.png")
+```
+
+##packages:
+```{r, out.width="5%", fig.align="left", echo = FALSE}
+knitr::include_graphics("img/tidyverse.png")
+knitr::include_graphics("img/rmarkdown.png")
+knitr::include_graphics("img/bookdown.png")
+knitr::include_graphics("img/shiny.png")
+knitr::include_graphics("img/purrr.png")
+knitr::include_graphics("img/dplyr.png")
+knitr::include_graphics("img/ggplot2.png")
+
+```
+
+
+  -the tidyverse metapackage
+  -Rmarkdown, Rbookdown, knitr
+## git  
+
+
