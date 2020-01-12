@@ -1,9 +1,9 @@
-name: "presentations"
+name: "PasLab"
 output_dir: "docs"
 navbar:
-  title: "Presentations"
+  title: "PasLab"
   left:
-  - text: "Home"
+  - text: "PasLab"
    href: index.html
   - text: "Productivity_1"
    href: Productivity_1.html
