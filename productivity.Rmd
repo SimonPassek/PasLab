@@ -35,11 +35,58 @@ library(tidyverse)
   > Why not use open source tools, with millions of active developers and support, that can be more powerful, efficent and elegant than commercial products?
 
 ## Why does reproducability matter?
-![](https://www.youtube.com/watch?v=s3JldKoA0zw){width = "400", height = "250"}
+
+```{r message=FALSE, echo = FALSE}
+
+library(vembedr)
+
+embed_youtube("s3JldKoA0zw", width = 400, height = 250)
+```
+
+
+## Some basic Syntax
+
+```{r eval=FALSE, comment=""}
+`r this is inline code, that is not evaluated´
+```
+
+```{r eval=FALSE, comment=""}
+**bold text**
+```
+**bold text**
+
+```{r eval=FALSE, comment=""}
+*italiciced text*
+```
+*italiciced text*
+
+
+***
+```{r eval=FALSE, comment=""}
+- item 1 
+- item 2 
+- item 3 
+```
+
+- item 1
+- item 2
+- item 3
+
+```{r eval=FALSE, comment=""}
+1. item 1 
+2. item 2 
+3. item 3 
+```
+
+1. item 1
+2. item 2
+3. item 3
+
 
 ##directly embed code
 
-```{r message=FALSE, warning=FALSE, echo=FALSE}
+
+```{r message=FALSE, warning=FALSE, echo=FALSE, comment =""}
 library(tidyverse)
 head(diamonds)
 
