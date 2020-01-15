@@ -1,0 +1,80 @@
+---
+title: networks
+output: html_document
+---
+```{r, setup}
+library(tidyverse)
+library(networkD3)
+```
+
+
+```{r}
+head(MisLinks)
+```
+```{r}
+head(MisNodes)
+```
+
+```{r}
+workflow <- tibble::tribble(
+  ~source, ~ target, ~value, ~name, ~group,~size,
+  1,2, 4, "the tidyverse", 10, 30,
+  2, 1, 4, "dyplyr", 10, 20
+)
+forceNetwork(Links = workflow[,1:3],Nodes = workflow[,4:6], Source = "source", Target = "target",
+            Value = "value", NodeID = "name",
+            Group = "group", opacity = 0.8, zoom = TRUE)
+```
+
+
+
+
+```{r}
+a1 <- MisLinks[1:10,]
+b1 <- MisNodes[1:10,]
+forceNetwork(Links = a1, Nodes = b1,
+            Source = "source", Target = "target",
+            Value = "value", NodeID = "name",
+            Group = "group", opacity = 0.8, zoom = TRUE)
+```
+```{r}
+src <- c("A", "A", "A", "A",
+        "B", "B", "C", "C", "D")
+target <- c("B", "C", "D", "J",
+            "E", "F", "G", "H", "I")
+networkData <- data.frame(src, target)
+
+# Plot
+simpleNetwork(networkData, zoom = TRUE)
+```
+
+```{r}
+tv <- "the tidyverse"
+efficent_network <- tibble::tribble(
+  ~src,  ~target,
+  "the tidyverse", "dplyr",
+  tv, "ggplot2",
+  tv, "tidyr",
+  tv, "readr",
+  tv, "purr"
+)
+
+simpleNetwork(efficent_network, zoom = TRUE)
+```
+```{r}
+tv <- "the tidyverse"
+
+workflow <- tibble::tribble(
+  ~source, ~ target, ~value, ~name, ~group,~size,
+  1,0, 1, "the tidyverse", 10, 30,
+  2,0,1, "dyplyr", 10, 20
+)
+```
+
+```{r}
+forceNetwork(Links = workflow[,1:3],Nodes = workflow[,4:6], Source = "source", Target = "target",
+            Value = "value", NodeID = "name",
+            Group = "group"E)
+```
+
+  
