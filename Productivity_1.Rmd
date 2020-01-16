@@ -25,7 +25,7 @@ library(networkD3)
   
 ## Can open source tools be a true alternative for many applications? { .build .smaller}
 
-- software development companys like windows, apple and co. produce usable, mostly good software
+- software development companys like windows, apple ... graphpad, SPSS... produce usable, mostly good software
 - but:
 
     - products are getting increasingly expansive and update/support dependent
@@ -186,7 +186,7 @@ Name <- "Peter"
 ```
 Lieber `r greetings[Name,1]`,
 <br>
-wollen wir uns am `r greetings[Name,3]` in `r greetings[Name,4]` treffen und eine `r greetings[Name,5]` unternehmen? Diese wir etwa `r lubridate::hour(lubridate::dmy_h(paste(greetings[Name,3], 3)))` Stunden dauern.
+wollen wir uns am `r greetings[Name,3]` in `r greetings[Name,4]` treffen und eine `r greetings[Name,5]` unternehmen? Diese wird etwa `r lubridate::hour(lubridate::dmy_h(paste(greetings[Name,3], 3)))` Stunden dauern.
 
 ***
 
@@ -195,7 +195,7 @@ Name <- "Jonas"
 ```
 Lieber `r greetings[Name,1]`,
 <br>
-wollen wir uns am `r greetings[Name,3]` in `r greetings[Name,4]` treffen und eine `r greetings[Name,5]` unternehmen? Diese wir etwa `r lubridate::hour(lubridate::dmy_h(paste(greetings[Name,3], 3)))` Stunden dauern.
+wollen wir uns am `r greetings[Name,3]` in `r greetings[Name,4]` treffen und eine `r greetings[Name,5]` unternehmen? Diese wird etwa `r lubridate::hour(lubridate::dmy_h(paste(greetings[Name,3], 3)))` Stunden dauern.
 <br>
 <br>
 
